@@ -6,6 +6,7 @@
     </head>
     <body>
         <?php
+        // Get all the HTML files from within the 2013 folder. (07 and 09)
         $filetypes = array("html");
         $path = './html/html/aiubproblemsolver.blogspot.de/2013/';
         $di = new RecursiveDirectoryIterator($path);
@@ -15,8 +16,8 @@
                 $files[] = (string) $file;
             }
         }
-//        var_dump($files);
 
+        // Now get me my information!
         foreach ($files as $file) {
             $folderName = explode('2013', $file);
             $stringToSeachIn = $folderName[1];
@@ -26,20 +27,24 @@
             $rawFolderName = str_replace("\\", "/", $rawFolderName);
             $rawFileName = substr($stringToSeachIn, $pos + 1);
             $dom = new DOMDocument();
-//            var_dump($path . $rawFolderName . $rawFileName);
-//            die();
-            $dom->loadHTMLFile($path . $rawFolderName . $rawFileName);
-            $elements = $dom->getElementsByTagName('*');
-            if (!is_null($elements)) {
-                foreach ($elements as $element) {
-                    echo "<br/>" . $element->nodeName . ": ";
-
-                    $nodes = $element->childNodes;
-                    foreach ($nodes as $node) {
-                        echo $node->nodeValue . "\n";
-                    }
-                }
+            @$dom->loadHTMLFile($path . $rawFolderName . $rawFileName); // Deactivate error messages
+                                                                        // since this is no valid HTML
+                                                                        // we're trying to read from! (@)
+            $finder = new DomXPath($dom);
+            $classname = "post hentry"; // Only get me this class! Its the post itself, only!
+            $nodes = $finder->query("//*[contains(concat(' ', normalize-space(@class), ' '), ' $classname ')]");
+            $tmp_dom = new DOMDocument();
+            foreach ($nodes as $node) {
+//                var_dump($node);
+//                die();
+                $tmp_dom->appendChild($tmp_dom->importNode($node, true));
             }
+            $innerHTML[] = trim($tmp_dom->saveHTML());
+            var_dump($innerHTML);
+            die();
+            // TODO: Find out why nodes are more than once in the array
+            // (Check line 38, I think there lies the error!)
+            // PS: I have to use textNode (or nodeValue)!
         }
         ?>
     </body>
