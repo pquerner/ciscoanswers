@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.blogger.com	TRUE	/	FALSE	1999999999	blogger_TID	6f7cfffb3f7fa1bd
+.google.com	TRUE	/	FALSE	1999999999	NID	67=PNeFdgUrMeIN0qcWFLS8zwOtH3Q5EWO5TZsEWMft08dtPP1zWJVPhzz7-qAK8U3oY7lzYICpAIlt51saynN8uLN3d9rbIpAaMxMBOYo5lbb7mA6DGfDj7kQgQ_CfXaqm
+

@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html class='v2' dir='ltr'>
+
+<!-- Mirrored from aiubproblemsolver.blogspot.de/2013/07/cisco-it-essentials-v-5-chapter-2.html by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 05 Nov 2013 20:37:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,e="jstiming",g="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){c=void 0!=c?c:(new Date).getTime();this.t[a]=[c,d]};this[g]("start",null,a)}var a=new d;b.jstiming={Timer:d,load:a};if(b.performance&&b.performance.timing){var a=b.performance.timing,c=b[e].load,f=a.navigationStart,a=a.responseStart;0<f&&a>=f&&(c[g]("_wtsrt",void 0,f),c[g]("wtsrt_","_wtsrt",a),c[g]("tbsd_","wtsrt_"))}try{a=null,b.chrome&&b.chrome.csi&&(a=Math.floor(b.chrome.csi().pageT),c&&0<f&&(c[g]("_tbnd",void 0,b.chrome.csi().startE),
+c[g]("tbnd_","_tbnd",f))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,c&&0<f&&(c[g]("_tbnd",void 0,b.external.startE),c[g]("tbnd_","_tbnd",f))),a&&(b[e].pt=a)}catch(l){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[e].load[g]("aft")};var h=!1;function k(){h||(h=!0,b[e].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",k,!1):b.attachEvent("onscroll",k);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='../../favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://aiubproblemsolver.blogspot.com/2013/07/cisco-it-essentials-v-5-chapter-2.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="AIUB PROBLEM SOLVER - Atom" href="http://aiubproblemsolver.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="AIUB PROBLEM SOLVER - RSS" href="http://aiubproblemsolver.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="AIUB PROBLEM SOLVER - Atom" href="http://www.blogger.com/feeds/2399680429478225239/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="AIUB PROBLEM SOLVER - Atom" href="http://aiubproblemsolver.blogspot.com/feeds/7975311778015876562/comments/default" />
+<!--[if IE]><script type="text/javascript" src="//www.blogger.com/static/v1/jsbin/4163410827-ieretrofit.js"></script>
+<![endif]-->
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>AIUB PROBLEM SOLVER: Cisco IT Essentials V 5 [CHAPTER 2]</title>
+<link type='text/css' rel='stylesheet' href='../../../www.blogger.com/static/v1/widgets/2023635439-widget_css_2_bundle.css' />
+<link type='text/css' rel='stylesheet' href='../../../www.blogger.com/dyn-css/authorizationa23c.css?targetBlogID=2399680429478225239&amp;zx=4940ad30-99b2-449d-b215-99e898f99880' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Watermark
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#c0a154"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#333333"/>
+</Group>
+<Group description="Backgrounds" selector=".main-inner">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#c0a154"/>
+<Variable name="footer.background.color" description="Footer Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-inner">
+<Variable name="link.color" description="Link Color" type="color" default="#cc3300"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#993322"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#ff3300"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Title Font" type="font"
+default="normal normal 60px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#ffffff" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#997755" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#ff9e71"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="transparent"/>
+<Variable name="tabs.separator.color" description="Separator Color" type="color" default="#000000"/>
+</Group>
+<Group description="Date Header" selector="h2.date-header">
+<Variable name="date.font" description="Font" type="font"
+default="normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.text.color" description="Text Color" type="color" default="#997755"/>
+</Group>
+<Group description="Post" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Title Font" type="font"
+default="normal normal 30px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/>
+<Variable name="post.background.color" description="Background Color" type="color" default="transparent"/>
+<Variable name="post.border.color" description="Border Color" type="color" default="#ccbb99" />
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#997755"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#777777"/>
+</Group>
+<Group description="Footer" selector=".footer-inner">
+<Variable name="footer.text.color" description="Text Color" type="color" default="#ffe0d9"/>
+<Variable name="footer.widget.title.text.color" description="Gadget Title Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Footer Links" selector=".footer-inner">
+<Variable name="footer.link.color" description="Link Color" type="color" default="#ff9e71"/>
+<Variable name="footer.link.visited.color" description="Visited Color" type="color" default="#ff606d"/>
+<Variable name="footer.link.hover.color" description="Hover Color" type="color" default="#ffdbc8"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#000000" default="$(color) url(//www.blogblog.com/1kt/watermark/body_background_birds.png) repeat scroll top left"/>
+<Variable name="body.background.overlay" description="Overlay Background" type="background" color="#000000"
+default="transparent url(//www.blogblog.com/1kt/watermark/body_overlay_birds.png) no-repeat scroll top right"/>
+<Variable name="body.background.overlay.height" description="Overlay Background Height" type="length" default="121px"/>
+<Variable name="tabs.background.inner" description="Tabs Background Inner" type="url" default="none"/>
+<Variable name="tabs.background.outer" description="Tabs Background Outer" type="url" default="none"/>
+<Variable name="tabs.border.size" description="Tabs Border Size" type="length" default="0"/>
+<Variable name="tabs.shadow.spread" description="Tabs Shadow Spread" type="length" default="0"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px"/>
+<Variable name="main.cap.height" description="Main Cap Height" type="length" default="0"/>
+<Variable name="main.cap.image" description="Main Cap Image" type="url" default="none"/>
+<Variable name="main.cap.overlay" description="Main Cap Overlay" type="url" default="none"/>
+<Variable name="main.background" description="Main Background" type="background"
+default="transparent none no-repeat scroll top left"/>
+<Variable name="post.background.url" description="Post Background URL" type="url"
+default="url(//www.blogblog.com/1kt/watermark/post_background_birds.png)"/>
+<Variable name="post.border.size" description="Post Border Size" type="length" default="1px"/>
+<Variable name="post.border.style" description="Post Border Style" type="string" default="dotted"/>
+<Variable name="post.shadow.spread" description="Post Shadow Spread" type="length" default="0"/>
+<Variable name="footer.background" description="Footer Background" type="background"
+color="#000000" default="$(color) url(//www.blogblog.com/1kt/watermark/body_background_navigator.png) repeat scroll top left"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Use this with templates/1ktemplate-*.html */
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffe0d9;
+background: #000000 url(http://themes.googleusercontent.com/image?id=18Yv0qxYK1UbLtMBOpx2o3N9Z0wqsOsgfdJWTmpRs4JewWLu3-HxArr4pRGA94hV2vwu4) no-repeat fixed top center /* Credit: sebastian-julian (http://www.istockphoto.com/googleimages.php?id=9907478&platform=blogger) */;
+}
+html body .content-outer {
+min-width: 0;
+max-width: 100%;
+width: 100%;
+}
+.content-outer {
+font-size: 92%;
+}
+a:link {
+text-decoration:none;
+color: #ff9e71;
+}
+a:visited {
+text-decoration:none;
+color: #ff606d;
+}
+a:hover {
+text-decoration:underline;
+color: #ffdbc8;
+}
+.body-fauxcolumns .cap-top {
+margin-top: 30px;
+background: transparent none no-repeat scroll center center;
+height: 256px;
+}
+.content-inner {
+padding: 0;
+}
+/* Header
+----------------------------------------------- */
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 20px;
+padding-right: 20px;
+}
+.Header h1 {
+font: normal normal 60px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #ffffff;
+text-shadow: 2px 2px rgba(0, 0, 0, .1);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 140%;
+color: #a68983;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section {
+margin: 0 20px;
+}
+.tabs-inner .PageList, .tabs-inner .LinkList, .tabs-inner .Labels {
+margin-left: -11px;
+margin-right: -11px;
+background-color: transparent;
+border-top: 0 solid #ffffff;
+border-bottom: 0 solid #ffffff;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .3);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .3);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .3);
+box-shadow: 0 0 0 rgba(0, 0, 0, .3);
+}
+.tabs-inner .PageList .widget-content,
+.tabs-inner .LinkList .widget-content,
+.tabs-inner .Labels .widget-content {
+margin: -3px -11px;
+background: transparent none  no-repeat scroll right;
+}
+.tabs-inner .widget ul {
+padding: 2px 25px;
+max-height: 34px;
+background: transparent none no-repeat scroll left;
+}
+.tabs-inner .widget li {
+border: none;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .25em 1em;
+font: normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #ff9e71;
+border-right: 1px solid #6b524c;
+}
+.tabs-inner .widget li:first-child a {
+border-left: 1px solid #6b524c;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #ffffff;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #ffffff;
+margin: 0 0 .5em;
+}
+h2.date-header {
+font: normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #a68983;
+}
+/* Main
+----------------------------------------------- */
+.main-inner .column-center-inner,
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+padding: 0 5px;
+}
+.main-outer {
+margin-top: 0;
+background: transparent none no-repeat scroll top left;
+}
+.main-inner {
+padding-top: 30px;
+}
+.main-cap-top {
+position: relative;
+}
+.main-cap-top .cap-right {
+position: absolute;
+height: 0;
+width: 100%;
+bottom: 0;
+background: transparent none repeat-x scroll bottom center;
+}
+.main-cap-top .cap-left {
+position: absolute;
+height: 245px;
+width: 280px;
+right: 0;
+bottom: 0;
+background: transparent none no-repeat scroll bottom left;
+}
+/* Posts
+----------------------------------------------- */
+.post-outer {
+padding: 15px 20px;
+margin: 0 0 25px;
+background: transparent url(../../../www.blogblog.com/1kt/watermark/post_background_navigator.png) repeat scroll top left;
+_background-image: none;
+border: dotted 1px #000000;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+h3.post-title {
+font: normal normal 30px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+margin: 0;
+}
+.comments h4 {
+font: normal normal 30px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+margin: 1em 0 0;
+}
+.post-body {
+font-size: 105%;
+line-height: 1.5;
+position: relative;
+}
+.post-header {
+margin: 0 0 1em;
+color: #a68983;
+}
+.post-footer {
+margin: 10px 0 0;
+padding: 10px 0 0;
+color: #a68983;
+border-top: dashed 1px #947771;
+}
+#blog-pager {
+font-size: 140%
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: dashed 1px #947771;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #947771;
+border-bottom: 1px solid #947771;
+}
+.comments .continue {
+border-top: 2px solid #947771;
+}
+/* Widgets
+----------------------------------------------- */
+.widget ul, .widget #ArchiveList ul.flat {
+padding: 0;
+list-style: none;
+}
+.widget ul li, .widget #ArchiveList ul.flat li {
+padding: .35em 0;
+text-indent: 0;
+border-top: dashed 1px #947771;
+}
+.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.widget .post-body ul {
+list-style: disc;
+}
+.widget .post-body ul li {
+border: none;
+}
+.widget .zippy {
+color: #947771;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 5px;
+background: #fff;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+-goog-ms-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 8px;
+}
+.post-body .tr-caption-container {
+color: #333333;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+color:#ffe0d9;
+background: #000000 url(../../../www.blogblog.com/1kt/watermark/body_background_navigator.png) repeat scroll top left;
+}
+.footer-outer a {
+color: #ff9e71;
+}
+.footer-outer a:visited {
+color: #ff606d;
+}
+.footer-outer a:hover {
+color: #ffdbc8;
+}
+.footer-outer .widget h2 {
+color: #ffffff;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: 100% auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+html .mobile .mobile-date-outer {
+border-bottom: none;
+background: transparent url(../../../www.blogblog.com/1kt/watermark/post_background_navigator.png) repeat scroll top left;
+_background-image: none;
+margin-bottom: 10px;
+}
+.mobile .main-inner .date-outer {
+padding: 0;
+}
+.mobile .main-inner .date-header {
+margin: 10px;
+}
+.mobile .main-cap-top {
+z-index: -1;
+}
+.mobile .content-outer {
+font-size: 100%;
+}
+.mobile .post-outer {
+padding: 10px;
+}
+.mobile .main-cap-top .cap-left {
+background: transparent none no-repeat scroll bottom left;
+}
+.mobile .body-fauxcolumns .cap-top {
+margin: 0;
+}
+.mobile-link-button {
+background: transparent url(../../../www.blogblog.com/1kt/watermark/post_background_navigator.png) repeat scroll top left;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ff9e71;
+}
+.mobile-index-date .date-header {
+color: #a68983;
+}
+.mobile-index-contents {
+color: #ffe0d9;
+}
+.mobile .tabs-inner .section {
+margin: 0;
+}
+.mobile .tabs-inner .PageList {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .tabs-inner .PageList .widget-content {
+margin: 0;
+color: #ffffff;
+background: transparent url(../../../www.blogblog.com/1kt/watermark/post_background_navigator.png) repeat scroll top left;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #6b524c;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 310px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 310px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("310px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 310px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 310px;
+margin-right: -310px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",k="?m=1";function l(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+k;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var m=l();m&&window.location.replace(m)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class='loading'>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="../../../apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("iframes-styles-bubble", function() {
+          if (window.iframes && iframes.open) {
+            iframes.open(
+                'http://www.blogger.com/navbar.g?targetBlogID\0752399680429478225239\46blogName\75AIUB+PROBLEM+SOLVER\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://aiubproblemsolver.blogspot.com/search\46blogLocale\75bn\46v\0752\46homepageUrl\75http://aiubproblemsolver.blogspot.com/\46targetPostID\0757975311778015876562\46blogPostOrPageUrl\75http://aiubproblemsolver.blogspot.com/2013/07/cisco-it-essentials-v-5-chapter-2.html\46vt\0755182640558277525613',
+                {
+                  container: "navbar-iframe-container",
+                  id: "navbar-iframe"
+                },
+                {
+                });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '../../../pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='../../index.html'>AIUB PROBLEM SOLVER</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol'></div>
+<div class='tabs section' id='crosscol-overflow'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>শ&#2497;ক&#2509;রব&#2494;র, ২৬ জ&#2497;ল&#2494;ই, ২০১৩</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='2399680429478225239' itemprop='blogId'/>
+<meta content='7975311778015876562' itemprop='postId'/>
+<a name='7975311778015876562'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+Cisco IT Essentials V 5 [CHAPTER 2]
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-7975311778015876562' itemprop='description articleBody'>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+Correct answers have &#63743; in front of the answer<br /><br />1<br />Which tool in Windows XP gives a technician access to initialize disks and create partitions?<br /><br />Defrag<br /><br />Scandisk<br /><br />Format<br /><br />&#63743;Disk Management<br /><br />Disk Cleanup<br /><br />2<br />Which Windows XP command-line utility scans the critical files of the operating system and replaces any files that have been corrupted?<br /><br />&#63743;System File Checker<br /><br />Disk Cleanup<br /><br />Scan System<br /><br />Defrag<br /><br />Disk Management<br /><br />Chkdsk<br /><br />3<br />Which two types of tools can help protect a computer from malicious attacks? (Choose two.)<br /><br />Disk Management<br /><br />&#63743;Spyware Remover<br /><br />&#63743;Antivirus software<br /><br />Disk Cleanup<br /><br />Scandisk<br /><br />Fdisk<br /><br />4<br />A technician wants to limit the chances of ESD affecting the workspace. Which three precautions should be taken? (Choose three.)<br /><br />&#63743;Ensure antistatic mats are on the workbench and floor.<br /><br />Keep humidity in the environment very low.<br /><br />Ensure that all flooring is carpeted.<br /><br />&#63743;Wear an antistatic wrist strap.<br /><br />&#63743;Keep all components in antistatic bags.<br /><br />Store all computer components in clear plastic bags.<br /><br />5<br />What are two significant sources of EMI? (Choose two.)<br /><br />infrared mice<br /><br />&#63743;electrical storms<br /><br />RAM modules<br /><br />&#63743;power lines<br /><br />LCD monitors<br /><br />6<br />Which precaution should be taken when working inside computer systems?<br /><br />&#63743;Avoid using magnetized tools.<br /><br />Wear ESD protection to repair monitors in humid environments.<br /><br />Leave the power cord attached to an outlet for grounding.<br /><br />Avoid using ESD wrist straps and ESD mats simultaneously.<br /><br />7<br />Which cleaning solution is recommended to clean the contacts of computer components?<br /><br />&#63743;isopropyl alcohol<br /><br />glass cleaner with ammonia<br /><br />water that is mixed with a small amount of dishwashing liquid<br /><br />rubbing alcohol<br /><br />8<br />Why should a pencil never be used as a tool when working inside a computer?<br /><br />&#63743;Pencil lead is conductive.<br /><br />The lead in a pencil can induce current.<br /><br />A pencil can hold a static charge.<br /><br />Pencil lead is corrosive.<br /><br />9<br />The performance of a computer is reduced after using the Internet. Which three tools could be run to try to improve the performance of the computer? (Choose three.)<br /><br />Fdisk<br /><br />a BIOS updater<br /><br />&#63743;Spyware remover<br /><br />&#63743;Defrag<br /><br />&#63743;Disk Cleanup<br /><br />Device Manager<br /><br />10<br />Why is documentation of all services and repairs an important organizational tool for a technician?<br /><br />It allows the public sharing of information on the Internet.<br /><br />It increases the cost of services and repairs.<br /><br />It reduces the technical skills required of new technicians.<br /><br />&#63743;It provides reference material for similar problems when they are encountered in the future.<br /><br />11<br />How does an inline UPS protect computer equipment against electrical power brownouts and blackouts?<br /><br />by stopping the flow of voltage to the computer<br /><br />by grounding excess electrical voltage<br /><br />by switching from main power to a standby power source<br /><br />&#63743;by using a battery to supply a constant level of voltage<br /><br />12<br />Which two actions pose a potential safety hazard to a technician? (Choose two.)<br /><br />standing on an antistatic mat while working on a computer<br /><br />plugging a printer into an UPS<br /><br />using a magnetic screwdriver while working on a hard drive<br /><br />&#63743;cleaning the inside of the computer while it is turned on<br /><br />&#63743;wearing a wrist strap while working inside a power supply<br /><br />13<br />Which circumstance increases the likelihood of ESD damage to a computer?<br /><br />self grounding against the computer case<br /><br />using a magnetic screwdriver while working on a hard drive<br /><br />plugging a printer into an UPS<br /><br />&#63743;working in low levels of humidity<br /><br />14<br />Which tool is designed to loosen or tighten crosshead screws?<br /><br />torx driver<br /><br />&#63743;phillips screwdriver<br /><br />flat head screwdriver<br /><br />hex driver<br /><br />15<br />Which tool could potentially cause data loss on hard disk or floppy drives?<br /><br />compressed air<br /><br />&#63743;a magnetic screwdriver<br /><br />a lead pencil<br /><br />a computer vacuum cleaner<br /><br />16<br />Which condition refers to a reduced voltage level of AC power that lasts for an extended period of time?<br /><br />sag<br /><br />spike<br /><br />surge<br /><br />&#63743;brownout<br /><br />17<br />A technician accidentally spills a cleaning solution on the floor of the workshop. Where would the technician find instructions on how to properly clean up and dispose of the product?<br /><br />the local hazardous materials team<br /><br />the insurance policy of the company<br /><br />&#63743;the material safety data sheet<br /><br />the regulations provided by the local occupational health and safety administration<br /><br />18<br />Which two devices commonly affect wireless networks? (Choose two.)<br /><br />&#63743;microwaves<br /><br />&#63743;cordless phones<br /><br />external hard drives<br /><br />home theaters<br /><br />Blu-ray players<br /><br />incandescent light bulbs<br /><br />19<br />What is a proper directive for using a can of compressed air to clean a PC?<br /><br />Use a long, steady stream of air from the can.<br /><br />&#63743;Do not spray the compressed air with the can upside down.<br /><br />Do not use compressed air to clean a CPU fan.<br /><br />Spray the CPU cooling fan with the compressed air to verify that the fan blade is spinning freely.<br /><br />20<br />Which type of fastener is loosened and tightened with a hex driver?<br /><br />&#63743;six sided bolt<br /><br />cross head screw<br /><br />slotted screw<br /><br />torx bolt<br /><br /></div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+এর দ&#2509;ব&#2494;র&#2494; প&#2507;স&#2509;ট কর&#2494;
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='http://www.blogger.com/profile/13454851233486605546' itemprop='url'/>
+<a class='g-profile' href='http://www.blogger.com/profile/13454851233486605546' rel='author' title='author profile'>
+<span itemprop='name'>Anonymous</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+এই সময়&#2503;
+<meta content='http://aiubproblemsolver.blogspot.com/2013/07/cisco-it-essentials-v-5-chapter-2.html' itemprop='url'/>
+<a class='timestamp-link' href='cisco-it-essentials-v-5-chapter-2.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2013-07-26T03:02:00-07:00'>৩:০২ am</abbr></a>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-737324217'>
+<a href='http://www.blogger.com/post-edit.g?blogID=2399680429478225239&amp;postID=7975311778015876562&amp;from=pencil' title='পোস্ট সম্পাদনা করুন'>
+<img alt='' class='icon-action' height='18' src='../../../img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=2399680429478225239&amp;postID=7975311778015876562&amp;target=email' target='_blank' title='এটি ইমেল করুন'><span class='share-button-link-text'>এট&#2495; ইম&#2503;ল কর&#2497;ন</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=2399680429478225239&amp;postID=7975311778015876562&amp;target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='এটি ব্লগ করুন!'><span class='share-button-link-text'>এট&#2495; ব&#2509;লগ কর&#2497;ন!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=2399680429478225239&amp;postID=7975311778015876562&amp;target=twitter' target='_blank' title='Twitter-এ ভাগ করুন'><span class='share-button-link-text'>Twitter-এ ভ&#2494;গ কর&#2497;ন</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=2399680429478225239&amp;postID=7975311778015876562&amp;target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Facebook-এ ভাগ করুন'><span class='share-button-link-text'>Facebook-এ ভ&#2494;গ কর&#2497;ন</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://aiubproblemsolver.blogspot.com/2013/07/cisco-it-essentials-v-5-chapter-2.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4> ক&#2507;ন মন&#2509;তব&#2509;য ন&#2503;ই:</h4>
+<div id='Blog1_comments-block-wrapper'>
+<dl class='avatar-comment-indent' id='comments-block'>
+</dl>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>একট&#2495; মন&#2509;তব&#2509;য প&#2507;স&#2509;ট কর&#2497;ন</h4>
+<p>
+</p>
+<a href='http://www.blogger.com/comment-iframe.g?blogID=2399680429478225239&amp;postID=7975311778015876562' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='#' width='100%'></iframe>
+<script type="text/javascript" src="../../../www.blogger.com/static/v1/jsbin/2373033623-comment_from_post_iframe.js"></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('http://www.blogger.com/rpc_relay.html', '13217341645198184513');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='cisco-it-essentials-v-5-chapter-3.html' id='Blog1_blog-pager-newer-link' title='নবীনতর পোস্ট'>নব&#2496;নতর প&#2507;স&#2509;ট</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='cisco-it-essentials-v-5-chapter-1.html' id='Blog1_blog-pager-older-link' title='পুরাতন পোস্ট'>প&#2497;র&#2494;তন প&#2507;স&#2509;ট</a>
+</span>
+<a class='home-link' href='../../index.html'>হ&#2507;ম</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+এত&#2503; সদস&#2509;যত&#2494;:
+<a class='feed-link' href='http://aiubproblemsolver.blogspot.com/feeds/7975311778015876562/comments/default' target='_blank' type='application/atom+xml'>মন&#2509;তব&#2509;যগ&#2497;ল&#2495; প&#2507;স&#2509;ট কর&#2497;ন (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'bn'};</script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>ব&#2509;লগ স&#2434;রক&#2509;ষ&#2494;ণ&#2494;গ&#2494;র</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='../../search541f.html?updated-min=2013-01-01T00:00:00-08:00&amp;updated-max=2014-01-01T00:00:00-08:00&amp;max-results=13'>2013</a>
+<span class='post-count' dir='ltr'>(13)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='../../2013_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='../../2013_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(12)</span>
+<ul class='posts'>
+<li><a href='cisco-it-essentials-v-5-chapter-12.html'>Cisco IT Essentials V 5 [CHAPTER 12]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-11.html'>Cisco IT Essentials V 5 [CHAPTER 11]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-10.html'>Cisco IT Essentials V 5 [CHAPTER 10]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-9.html'>Cisco IT Essentials V 5 [CHAPTER 9]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-8.html'>Cisco IT Essentials V 5 [CHAPTER 8]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-7.html'>Cisco IT Essentials V 5 [CHAPTER 7]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-6.html'>Cisco IT Essentials V 5 [CHAPTER 6]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-5.html'>Cisco IT Essentials V 5 [CHAPTER 5]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-4.html'>Cisco IT Essentials V 5 [CHAPTER 4]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-3.html'>Cisco IT Essentials V 5 [CHAPTER 3]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-2.html'>Cisco IT Essentials V 5 [CHAPTER 2]</a></li>
+<li><a href='cisco-it-essentials-v-5-chapter-1.html'>Cisco IT Essentials V 5 [CHAPTER 1]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2399680429478225239&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget&amp;sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='সম্পাদনা'>
+<img alt='' height='18' src='../../../img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-1'><div class='widget Profile' id='Profile1'>
+<h2>আম&#2494;র সম&#2509;পর&#2509;ক&#2503;</h2>
+<div class='widget-content'>
+<a href='http://www.blogger.com/profile/13454851233486605546'><img alt='আমার ফোটো' class='profile-img' height='50' src='../../../1.bp.blogspot.com/-pVReoZZRF3w/UfJE6x_lgkI/AAAAAAAAAAU/cRBoG0i9BM0/s220/url.jpg' width='80'/></a>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link g-profile' href='http://www.blogger.com/profile/13454851233486605546' rel='author' style='background-image: url(../../../www.blogger.com/img/logo-16.png);'>
+Anonymous
+</a>
+</dt>
+</dl>
+<a class='profile-link' href='http://www.blogger.com/profile/13454851233486605546' rel='author'>আম&#2494;র সম&#2509;প&#2498;র&#2509;ণ প&#2509;র&#2507;ফ&#2494;ইল দ&#2503;খ&#2497;ন</a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2399680429478225239&amp;widgetType=Profile&amp;widgetId=Profile1&amp;action=editWidget&amp;sectionId=sidebar-right-2-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='সম্পাদনা'>
+<img alt='' height='18' src='../../../img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</td>
+<td class='columns-cell'>
+<div class='sidebar section' id='sidebar-right-2-2'><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+<script language="JavaScript" src="http://bocahgabus.googlecode.com/files/kamera cctv.txt" type="text/javascript"> </script> <script language="JavaScript" type="text/javascript"> cot("../../../1.bp.blogspot.com/-jyICA3F7eOo/TbBE4YBgbpI/AAAAAAAAAEM/XU9sJQnzGvU/s1600/cctv.gif")</script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2399680429478225239&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget&amp;sectionId=sidebar-right-2-2' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='সম্পাদনা'>
+<img alt='' height='18' src='../../../img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='sidebar section' id='sidebar-right-3'></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3'><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Watermark ট&#2503;মপ&#2509;ল&#2503;ট. <a href='http://www.istockphoto.com/googleimages.php?id=9907478&amp;platform=blogger&amp;langregion=bn' target='_blank'>sebastian-julian</a> দ&#2509;ব&#2494;র&#2494; ট&#2503;মপ&#2509;ল&#2503;ট চ&#2495;ত&#2509;রসম&#2498;হ. দ&#2509;ব&#2494;র&#2494; প&#2509;রস&#2509;ত&#2497;ত <a href='http://www.blogger.com/' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=2399680429478225239&amp;widgetType=Attribution&amp;widgetId=Attribution1&amp;action=editWidget&amp;sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='সম্পাদনা'>
+<img alt='' height='18' src='../../../img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="../../../www.blogger.com/static/v1/widgets/4103944743-widgets.js"></script>
+<script type="text/javascript" src="../../../apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '2399680429478225239';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2399680429478225239','cisco-it-essentials-v-5-chapter-2.html','2399680429478225239');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2399680429478225239', 'bloggerUrl': 'http://www.blogger.com', 'title': 'AIUB PROBLEM SOLVER', 'pageType': 'item', 'url': 'http://aiubproblemsolver.blogspot.de/2013/07/cisco-it-essentials-v-5-chapter-2.html', 'canonicalUrl': 'http://aiubproblemsolver.blogspot.com/2013/07/cisco-it-essentials-v-5-chapter-2.html', 'canonicalHomepageUrl': 'http://aiubproblemsolver.blogspot.com/', 'homepageUrl': 'http://aiubproblemsolver.blogspot.de/', 'blogspotFaviconUrl': 'http://aiubproblemsolver.blogspot.de/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Cisco IT Essentials V 5 [CHAPTER 2]', 'pageTitle': 'AIUB PROBLEM SOLVER: Cisco IT Essentials V 5 [CHAPTER 2]', 'encoding': 'UTF-8', 'locale': 'bn', 'localeUnderscoreDelimited': 'bn', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42AIUB PROBLEM SOLVER - Atom\42 href\75\42http://aiubproblemsolver.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42AIUB PROBLEM SOLVER - RSS\42 href\75\42http://aiubproblemsolver.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42AIUB PROBLEM SOLVER - Atom\42 href\75\42http://www.blogger.com/feeds/2399680429478225239/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42AIUB PROBLEM SOLVER - Atom\42 href\75\42http://aiubproblemsolver.blogspot.com/feeds/7975311778015876562/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,e\75\42jstiming\42,g\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){c\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[c,d]};this[g](\42start\42,null,a)}var a\75new d;b.jstiming\75{Timer:d,load:a};if(b.performance\46\46b.performance.timing){var a\75b.performance.timing,c\75b[e].load,f\75a.navigationStart,a\75a.responseStart;0\74f\46\46a\76\75f\46\46(c[g](\42_wtsrt\42,void 0,f),c[g](\42wtsrt_\42,\42_wtsrt\42,a),c[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,b.chrome\46\46b.chrome.csi\46\46(a\75Math.floor(b.chrome.csi().pageT),c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.chrome.csi().startE),\nc[g](\42tbnd_\42,\42_tbnd\42,f))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.external.startE),c[g](\42tbnd_\42,\42_tbnd\42,f))),a\46\46(b[e].pt\75a)}catch(l){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[e].load[g](\42aft\42)};var h\75!1;function k(){h||(h\75!0,b[e].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,k,!1):b.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42//www.blogger.com/static/v1/jsbin/4163410827-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/15de8d1bfc9ff1d1', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'testHtml5CssSrc': '//www.blogger.com/static/v1/widgets/2748914266-css_bundle_html5.css', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {'tabs_border_size': '0', 'tabs_shadow_spread': '0', 'link_visited_color': '#ff606d', 'post_title_font': 'normal normal 30px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'tabs_separator_color': '#6b524c', 'tabs_text_color': '#ff9e71', 'post_shadow_spread': '0', 'body_background_overlay_height': '256px', 'main_cap_height': '0', 'widget_title_font': 'normal normal 20px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'body_background_overlay': 'transparent none no-repeat scroll center center', 'tabs_background_outer': 'none', 'body_background': '#000000 url(//themes.googleusercontent.com/image?id\07518Yv0qxYK1UbLtMBOpx2o3N9Z0wqsOsgfdJWTmpRs4JewWLu3-HxArr4pRGA94hV2vwu4) no-repeat fixed top center /* Credit: sebastian-julian (http://www.istockphoto.com/googleimages.php?id\759907478\46platform\75blogger) */', 'keycolor': '#000000', 'main_background': 'transparent none no-repeat scroll top left', 'header_font': 'normal normal 60px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'post_border_style': 'dotted', 'footer_link_visited_color': '#ff606d', 'post_background_url': 'url(//www.blogblog.com/1kt/watermark/post_background_navigator.png)', 'footer_link_hover_color': '#ffdbc8', 'mobile_background_overlay': 'transparent none repeat scroll top left', 'tabs_background_color': 'transparent', 'link_hover_color': '#ffdbc8', 'footer_link_color': '#ff9e71', 'description_text_color': '#a68983', 'body_text_color': '#ffe0d9', 'post_border_color': '#000000', 'footer_text_color': '#ffe0d9', 'post_background_color': 'transparent', 'endSide': 'right', 'post_footer_text_color': '#a68983', 'tabs_background_inner': 'none', 'tabs_font': 'normal normal 20px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'startSide': 'left', 'body_font': 'normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'main_cap_overlay': 'none', 'date_text_color': '#a68983', 'widget_title_text_color': '#ffffff', 'link_color': '#ff9e71', 'footer_widget_title_text_color': '#ffffff', 'post_border_size': '1px', 'main_cap_image': 'none', 'footer_background_color': '#000000', 'header_text_color': '#ffffff', 'date_font': 'normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'main_padding_top': '30px', 'tabs_selected_text_color': '#ffffff', 'body_background_color': '#000000', 'widget_alternate_text_color': '#947771'}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Watermark ট&#2503;মপ&#2509;ল&#2503;ট. \74a href\75\47http://www.istockphoto.com/googleimages.php?id\759907478\46platform\75blogger\46langregion\75bn\47 target\75\47_blank\47\76sebastian-julian\74/a\76 দ&#2509;ব&#2494;র&#2494; ট&#2503;মপ&#2509;ল&#2503;ট চ&#2495;ত&#2509;রসম&#2498;হ. দ&#2509;ব&#2494;র&#2494; প&#2509;রস&#2509;ত&#2497;ত \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/540033957-lbx__bn.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/4138445517-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-right-2-2', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-2-1', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'null', null, document.getElementById('PageList1'), {'title': 'প&#2499;ষ&#2509;ঠ&#2494;সম&#2498;হ', 'links': [{'href': 'http://aiubproblemsolver.blogspot.de/', 'title': 'হ&#2507;ম', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+
+<!-- Mirrored from aiubproblemsolver.blogspot.de/2013/07/cisco-it-essentials-v-5-chapter-2.html by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 05 Nov 2013 20:37:02 GMT -->
+</html>
