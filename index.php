@@ -27,17 +27,34 @@
             $rawFolderName = str_replace("\\", "/", $rawFolderName);
             $rawFileName = substr($stringToSeachIn, $pos + 1);
             $dom = new DOMDocument();
-            @$dom->loadHTMLFile($path . $rawFolderName . $rawFileName); // Deactivate error messages
-                                                                        // since this is no valid HTML
-                                                                        // we're trying to read from! (@)
+            @$dom->loadHTMLFile($path . $rawFolderName . $rawFileName);
+            /*
+             *  // Deactivate error messages
+             *  // since this is no valid HTML
+             *  // we're trying to read from! (@) 
+             */
             $finder = new DomXPath($dom);
             $classname = "post hentry"; // Only get me this class! Its the post itself, only!
             $nodes = $finder->query("//*[contains(concat(' ', normalize-space(@class), ' '), ' $classname ')]");
             foreach ($nodes as $node) {
-                $htmlContent[] = (string)$node->nodeValue;
+                $content = explode("Anonymous", (string) $node->nodeValue);
+                $content = trim($content[0]);
+                $content = str_replace("", "###CORRECT_ANSWER###", $content);
+                $contentLines = explode("\n", $content);
+                foreach ($contentLines as $line) {
+                    if (!preg_match('/[^\\p{Common}\\p{Latin}]/u', $line)) {
+                        if ($line != "") { //Remove empty strings
+                            if (is_numeric($line)) {
+                                $arrContent[] = $line;
+                            } else {
+                                $arrContent[] = $line;
+                            }
+                        }
+                    }
+                }
             }
         }
-        var_dump($htmlContent);
+        var_dump($arrContent);
         ?>
     </body>
 </html>
