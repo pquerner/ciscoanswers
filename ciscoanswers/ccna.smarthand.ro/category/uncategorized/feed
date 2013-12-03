@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CISCO CCNA &#38; ITEssentials &#187; Uncategorized</title>
+	<atom:link href="http://ccna.smarthand.ro/category/uncategorized/feed" rel="self" type="application/rss+xml" />
+	<link>http://ccna.smarthand.ro</link>
+	<description>Questions &#38; Answers for CCNA &#38; IT Essentials</description>
+	<lastBuildDate>Thu, 19 Sep 2013 18:31:27 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.1</generator>
+	<item>
+		<title>Welcome to CCNA &amp; ITEssentials.</title>
+		<link>http://ccna.smarthand.ro/primapagina</link>
+		<comments>http://ccna.smarthand.ro/primapagina#comments</comments>
+		<pubDate>Tue, 23 Apr 2013 16:32:15 +0000</pubDate>
+		<dc:creator><![CDATA[stelianb]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?p=1</guid>
+		<description><![CDATA[<p class="lead">Welcome to CCNA &#38; ITEssentials. Questions &#38; Answers for CCNA &#38; IT Essentials. Enjoy !!!</p><p class="more-link-p"><a class="btn btn-danger btn-sm" href="http://ccna.smarthand.ro/primapagina">Read more &#8594;</a></p>]]></description>
+				<content:encoded><![CDATA[<p>Welcome to CCNA &amp; ITEssentials.</p>
+<div>Questions &amp; Answers for CCNA &amp; IT Essentials.</div>
+<div></div>
+<div>Enjoy !!!</div>
+]]></content:encoded>
+			<wfw:commentRss>http://ccna.smarthand.ro/primapagina/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

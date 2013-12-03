@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: author</title>
+	<atom:link href="http://ccna.smarthand.ro/sample-page/feed" rel="self" type="application/rss+xml" />
+	<link>http://ccna.smarthand.ro</link>
+	<description>Questions &#38; Answers for CCNA &#38; IT Essentials</description>
+	<lastBuildDate>Mon, 07 Oct 2013 18:26:38 +0000</lastBuildDate>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.1</generator>
+	<item>
+		<title>By: joanne</title>
+		<link>http://ccna.smarthand.ro/sample-page#comment-97</link>
+		<dc:creator><![CDATA[joanne]]></dc:creator>
+		<pubDate>Fri, 05 Jul 2013 18:29:17 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=2#comment-97</guid>
+		<description><![CDATA[when will you have it essentials fifth edition?]]></description>
+		<content:encoded><![CDATA[<p>when will you have it essentials fifth edition?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Quintao Tilman Dos Reis</title>
+		<link>http://ccna.smarthand.ro/sample-page#comment-92</link>
+		<dc:creator><![CDATA[Quintao Tilman Dos Reis]]></dc:creator>
+		<pubDate>Wed, 05 Jun 2013 09:31:02 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=2#comment-92</guid>
+		<description><![CDATA[i want to addetional my knodlege]]></description>
+		<content:encoded><![CDATA[<p>i want to addetional my knodlege</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Alex</title>
+		<link>http://ccna.smarthand.ro/sample-page#comment-84</link>
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 02:37:56 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=2#comment-84</guid>
+		<description><![CDATA[Thanks! I have been lost with out this site. Finals are in 5 days.]]></description>
+		<content:encoded><![CDATA[<p>Thanks! I have been lost with out this site. Finals are in 5 days.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

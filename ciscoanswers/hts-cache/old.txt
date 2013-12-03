@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+12:51:45	372/372	U-----	200	untouched ('Not%20Acceptable')	text/html	date:Mon,%2002%20Dec%202013%2011:51:12%20GMT	http://ccna.smarthand.ro/robots.txt		(from )
+12:51:45	372/372	U-----	200	untouched ('Not%20Acceptable')	text/html	date:Mon,%2002%20Dec%202013%2011:51:12%20GMT	http://ccna.smarthand.ro/	R:/XAMPP/htdocs/ciscoanswers/ciscoanswers/ccna.smarthand.ro/index.html	(from )

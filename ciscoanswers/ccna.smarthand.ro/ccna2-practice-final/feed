@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: ccna2-practice-final &#8211; v1</title>
+	<atom:link href="http://ccna.smarthand.ro/ccna2-practice-final/feed" rel="self" type="application/rss+xml" />
+	<link>http://ccna.smarthand.ro</link>
+	<description>Questions &#38; Answers for CCNA &#38; IT Essentials</description>
+	<lastBuildDate>Mon, 07 Oct 2013 18:26:38 +0000</lastBuildDate>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.1</generator>
+	<item>
+		<title>By: Kevin</title>
+		<link>http://ccna.smarthand.ro/ccna2-practice-final#comment-91</link>
+		<dc:creator><![CDATA[Kevin]]></dc:creator>
+		<pubDate>Mon, 27 May 2013 16:27:31 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=51#comment-91</guid>
+		<description><![CDATA[test]]></description>
+		<content:encoded><![CDATA[<p>test</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: alexis</title>
+		<link>http://ccna.smarthand.ro/ccna2-practice-final#comment-68</link>
+		<dc:creator><![CDATA[alexis]]></dc:creator>
+		<pubDate>Wed, 24 Apr 2013 23:23:25 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=51#comment-68</guid>
+		<description><![CDATA[muy buena pagina!]]></description>
+		<content:encoded><![CDATA[<p>muy buena pagina!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

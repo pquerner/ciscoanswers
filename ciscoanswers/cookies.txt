@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.histats.com	TRUE	/	FALSE	1999999999	CountUid	179eff45-d8fg-4fda-97f2-0ea665be8c0a
+.histats.com	TRUE	/	FALSE	1999999999	_hstbhid	fa39b82e1385985210
+

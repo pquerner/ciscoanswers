@@ -1,0 +1,99 @@
+HTTrack3.47-27+htsswf+htsjava launched on Mon, 02 Dec 2013 12:52:56 at http://ccna.smarthand.ro/ +*.png +*.gif +*.jpg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps0u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2013], %s -->" -%l "en, *" http://ccna.smarthand.ro/ -O1 R:\XAMPP\htdocs\ciscoanswers\ciscoanswers +*.png +*.gif +*.jpg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:57:37	Error: 	"Not Found" (404) at link ccna.smarthand.ro/primapagina (from ccna.smarthand.ro/)
+12:57:37	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=2
+12:57:37	Warning: 	File has moved from ccna.smarthand.ro/?p=2 to http://ccna.smarthand.ro/sample-page
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=6
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=6 to http://ccna.smarthand.ro/ccna1-chapter-02
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=8
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=8 to http://ccna.smarthand.ro/ccna1-chapter-03
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=10
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=10 to http://ccna.smarthand.ro/ccna1-chapter-04
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=13
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=13 to http://ccna.smarthand.ro/ccna1-chapter-05
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=15
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=15 to http://ccna.smarthand.ro/ccna1-chapter-06
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=17
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=17 to http://ccna.smarthand.ro/ccna1-chapter-07
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=19
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=19 to http://ccna.smarthand.ro/ccna1-chapter-08
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=21
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=21 to http://ccna.smarthand.ro/ccna1-chapter-09
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=23
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=23 to http://ccna.smarthand.ro/ccna1-chapter-10
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=25
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=25 to http://ccna.smarthand.ro/ccna1-chapter-11
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=27
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=27 to http://ccna.smarthand.ro/ccna1-enetwork-pt-practice-sba
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=29
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=29 to http://ccna.smarthand.ro/ccna1-practice-final
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=32
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=32 to http://ccna.smarthand.ro/ccna2-chapter-02
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=34
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=34 to http://ccna.smarthand.ro/ccna2-chapter-03
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=36
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=36 to http://ccna.smarthand.ro/ccna2-chapter-04
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=38
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=38 to http://ccna.smarthand.ro/ccna2-chapter-05
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=39
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=39 to http://ccna.smarthand.ro/ccna2-chapter-06
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=41
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=41 to http://ccna.smarthand.ro/ccna2-chapter-07
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=43
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=43 to http://ccna.smarthand.ro/ccna2-chapter-08
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=45
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=45 to http://ccna.smarthand.ro/ccna2-chapter-09
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=47
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=47 to http://ccna.smarthand.ro/ccna2-chapter-10
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=49
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=49 to http://ccna.smarthand.ro/ccna2-chapter-11
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=51
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=51 to http://ccna.smarthand.ro/ccna2-practice-final
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=53
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=53 to http://ccna.smarthand.ro/ccna2-practice-pdf
+12:57:38	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=55
+12:57:38	Warning: 	File has moved from ccna.smarthand.ro/?p=55 to http://ccna.smarthand.ro/it-essentials-chapter-01
+12:57:39	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=57
+12:57:39	Warning: 	File has moved from ccna.smarthand.ro/?p=57 to http://ccna.smarthand.ro/it-essentials-chapter-02
+12:57:39	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=59
+12:57:39	Warning: 	File has moved from ccna.smarthand.ro/?p=59 to http://ccna.smarthand.ro/it-essentials-chapter-03
+12:57:39	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=63
+12:57:39	Warning: 	File has moved from ccna.smarthand.ro/?p=63 to http://ccna.smarthand.ro/it-essentials-chapter-05
+12:57:39	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=65
+12:57:39	Warning: 	File has moved from ccna.smarthand.ro/?p=65 to http://ccna.smarthand.ro/it-essentials-chapter-06
+12:57:39	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=67
+12:57:39	Warning: 	File has moved from ccna.smarthand.ro/?p=67 to http://ccna.smarthand.ro/it-essentials-chapter-07
+12:57:39	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=69
+12:57:39	Warning: 	File has moved from ccna.smarthand.ro/?p=69 to http://ccna.smarthand.ro/it-essentials-chapter-08
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=77
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=77 to http://ccna.smarthand.ro/it-essentials-chapter-09
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=79
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=79 to http://ccna.smarthand.ro/it-essentials-chapter-10
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=81
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=81 to http://ccna.smarthand.ro/it-essentials-chapter-11
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=83
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=83 to http://ccna.smarthand.ro/it-essentials-chapter-12
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=85
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=85 to http://ccna.smarthand.ro/it-essentials-chapter-13
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=87
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=87 to http://ccna.smarthand.ro/it-essentials-chapter-14
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=89
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=89 to http://ccna.smarthand.ro/it-essentials-chapter-15
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=92
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=92 to http://ccna.smarthand.ro/it-essentials-chapter-15-2
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=97
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=97 to http://ccna.smarthand.ro/it-essentials-chapter-windows-7
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=99
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=99 to http://ccna.smarthand.ro/it-essentials-practice-final-exam-1-10
+12:57:40	Warning: 	Moved Permanently for ccna.smarthand.ro/?p=101
+12:57:40	Warning: 	File has moved from ccna.smarthand.ro/?p=101 to http://ccna.smarthand.ro/it-essentials-practice-final-exam-11-16
+12:57:41	Warning: 	Warning, link #384 empty
+
+HTTrack Website Copier/3.47-27 mirror complete in 4 minutes 45 seconds : 383 links scanned, 339 files written (9981354 bytes overall), 339 files updated [6410719 bytes received at 22493 bytes/sec], 4832610 bytes transferred using HTTP compression in 137 files, ratio 21%, 1.2 requests per connection
+(1 errors, 87 warnings, 0 messages)

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: it-essentials-chapter-12</title>
+	<atom:link href="http://ccna.smarthand.ro/it-essentials-chapter-12/feed" rel="self" type="application/rss+xml" />
+	<link>http://ccna.smarthand.ro</link>
+	<description>Questions &#38; Answers for CCNA &#38; IT Essentials</description>
+	<lastBuildDate>Mon, 07 Oct 2013 18:26:38 +0000</lastBuildDate>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.1</generator>
+	<item>
+		<title>By: stelianb</title>
+		<link>http://ccna.smarthand.ro/it-essentials-chapter-12#comment-82</link>
+		<dc:creator><![CDATA[stelianb]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2013 10:10:44 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=83#comment-82</guid>
+		<description><![CDATA[Hy, this chapter will be opened today. Each page of this site is edited manually for the old database is irrecoverable. Sorry for the inconvenience.]]></description>
+		<content:encoded><![CDATA[<p>Hy, this chapter will be opened today. Each page of this site is edited manually for the old database is irrecoverable. Sorry for the inconvenience.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: zjj</title>
+		<link>http://ccna.smarthand.ro/it-essentials-chapter-12#comment-77</link>
+		<dc:creator><![CDATA[zjj]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2013 11:33:42 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=83#comment-77</guid>
+		<description><![CDATA[open chapter]]></description>
+		<content:encoded><![CDATA[<p>open chapter</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: david</title>
+		<link>http://ccna.smarthand.ro/it-essentials-chapter-12#comment-74</link>
+		<dc:creator><![CDATA[david]]></dc:creator>
+		<pubDate>Thu, 25 Apr 2013 13:44:23 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=83#comment-74</guid>
+		<description><![CDATA[this is cool...]]></description>
+		<content:encoded><![CDATA[<p>this is cool&#8230;</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

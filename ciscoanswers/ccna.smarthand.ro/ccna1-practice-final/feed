@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: ccna2-chapter-01</title>
+	<atom:link href="http://ccna.smarthand.ro/ccna1-practice-final/feed" rel="self" type="application/rss+xml" />
+	<link>http://ccna.smarthand.ro</link>
+	<description>Questions &#38; Answers for CCNA &#38; IT Essentials</description>
+	<lastBuildDate>Mon, 07 Oct 2013 18:26:38 +0000</lastBuildDate>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.1</generator>
+	<item>
+		<title>By: Muhammad Aliyu Mohammed</title>
+		<link>http://ccna.smarthand.ro/ccna1-practice-final#comment-96</link>
+		<dc:creator><![CDATA[Muhammad Aliyu Mohammed]]></dc:creator>
+		<pubDate>Thu, 04 Jul 2013 10:56:17 +0000</pubDate>
+		<guid isPermaLink="false">http://ccna.smarthand.ro/?page_id=29#comment-96</guid>
+		<description><![CDATA[it good n it help u to ans question easy]]></description>
+		<content:encoded><![CDATA[<p>it good n it help u to ans question easy</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
