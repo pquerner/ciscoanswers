@@ -27,47 +27,41 @@
              *  // we're trying to read from! (@) 
              */
             $finder = new DomXPath($dom);
-            $elem = $finder->query('//p | //ul');
+            $elem = $finder->query('//p | //ul | //strong');
             if ($elem->length <> 0) {
-                for ($i = 0; $i < $elem->length; $i++) {
-                    $element = $elem->item($i);
+                $i = 0;
+//                var_dump($elem);
+//                die();
+                foreach ($elem as $ele) {
+//                    var_dump($ele);
+//                    die();
+                    $element = $ele;
+                    $arrContent[$i]["question"] = null;
+                    $arrContent[$i]["answers"] = null;
+                    $arrContent[$i]["correctAnswer"] = null;
                     if ($element->tagName == 'p') {
                         if (strstr($element->nodeValue, "IT Essentials")) {
                             $arrContent[$i]["chapters"] = $element->nodeValue;
-                            $arrContent[$i]["question"] = null;
-                            $arrContent[$i]["answers"] = null;
                         } else {
                             $arrContent[$i]["question"] = $element->nodeValue;
                         }
-                    } else {
-                        $arrContent[$i]["question"] = null;
                     }
                     if ($element->tagName == 'ul') {
-                        //is correct answer, append ###CORRECT### to the string
-                        if($element->firstChild == 'span') {
-                            $arrContent[$i]["answers"] = $element->nodeValue."###CORRECT###";
-                        } else {
-                            $arrContent[$i]["answers"] = $element->nodeValue;
-                        }
-                    } else {
-                        $arrContent[$i]["answers"] = null;
+                        $arrContent[$i]["answers"] = $element->nodeValue;
                     }
-//                    if ($element->tagName == 'p') {
-//                        if ($element->nodeValue != "") {
-//                            $arrContent[$i]["question"] = $element->nodeValue;
-//                            $arrContent[$i]["answers"] = null;
-//                        }
-//                        
-//                    } elseif ($element->tagName == 'ul') {
-//                        if ($element->nodeValue != "")
-//                            $arrContent[$i]["answers"] = $element->nodeValue;
-//                    }
+                    if ($element->tagName == 'strong') {
+                        $arrContent[$i]["correctAnswer"] = $element->nodeValue;
+                    }
+                    $i++;
                 }
             }
         }
-        unset($arrContent[0]);
         var_dump($arrContent);
         die();
+        unset($arrContent[0]);
+        foreach (range(1, count($arrContent), 3) as $key) {
+            unset($arrContent[$key]);
+        }
         ?>
     </body>
 </html>
