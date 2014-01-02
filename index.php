@@ -60,20 +60,15 @@
                     if ($element->tagName == 'span') {
                         if ($element->hasAttribute('style')) {
                             if (!empty($element->nodeValue)) {
-                                if (!stristr($element->nodeValue, "?")) {
+                                if (!strpos($element->nodeValue, "?")) {
                                     $style = $element->getAttribute('style');
                                     if (stristr($style, "font-family: comic sans ms,sans-serif; font-size: 12px; background-color: #ffff00;")) {
                                         //is correct answer
                                         $arrContent[$currentFile][$i]["correctAnswer"][] = (string) $element->nodeValue;
                                     }
-                                    if ($element->nodeValue === $curVal) {
-                                        $arrContent[$currentFile][$i]["answers"][] = (string) $element->nodeValue;
-                                    }
-                                    $curVal = (string) $element->nodeValue;
+                                    $arrContent[$currentFile][$i]["answers"][] = (string) $element->nodeValue;
                                 }
                             }
-
-
                         }
                     }
                 }
