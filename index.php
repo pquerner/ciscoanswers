@@ -74,14 +74,10 @@
             echo '<select onchange="this.form.submit()" name="exam">';
             echo "<option selected value='noval'>Bitte auswählen</option>";
             foreach ($arr as $aKey => $aVal) {
-                if (isset($_POST) && !empty($_POST)) {
-                    if ($_POST['exam']) {
-                        if ($aKey === $_POST['exam']) {
-                            echo "<option selected value='" . $aKey . "'>" . $aKey . "</option>";
-                        } else {
-                            echo "<option value='" . $aKey . "'>" . $aKey . "</option>";
-                        }
-                    }
+                if ($aKey === $_POST['exam']) {
+                    echo "<option selected value='" . $aKey . "'>" . $aKey . "</option>";
+                } else {
+                    echo "<option value='" . $aKey . "'>" . $aKey . "</option>";
                 }
             }
             echo "</select>";
